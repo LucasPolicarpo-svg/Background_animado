@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.new{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.new .box{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #222222;
+}
+
+.anima01{
+    animation: animacao 2s linear forwards;
+}
+
+@keyframes animacao{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        background-color: #0f0;
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
